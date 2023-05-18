@@ -60,6 +60,7 @@ const styles = StyleSheet.create({
     textInput: {
         borderBottomWidth: 2,
         borderBottomColor: 'rgb(55, 192, 252)',
+        color: 'rgba(255, 255, 255, 0.5)',
         marginLeft: 15,
     },
     textPlaceHolder: {

@@ -39,7 +39,7 @@ const Signup = () => {
       <TextInput style={styles.textInput} clearTextOnFocus={true} secureTextEntry={true}>
         <Text>Confirm Password</Text>
       </TextInput>
-      <TouchableOpacity style={styles.createContainer} onPress={() => navigation.navigate('Homepage')}>
+      <TouchableOpacity style={styles.accountContainer} onPress={() => navigation.navigate('Homepage')}>
         <Text style={styles.createWriteup}>Create Account</Text>
       </TouchableOpacity>
     </View>
@@ -62,18 +62,17 @@ const styles = StyleSheet.create({
     textInput: {
         marginHorizontal: 20,
         color: 'rgba(255, 255, 255, 0.5)',
-        paddingBottom: 9,
+        marginTop: 9,
         borderBottomWidth: 2,
         borderBottomColor: 'rgb(55, 192, 252)',
     },
-    createContainer: {
+    accountContainer: {
         backgroundColor: 'rgb(251, 187, 68)',
-        boderRadius: 30,
+        boderRadius: 10,
         alignItems: 'center',
         justifyContent: 'center',
-        padding: 10,
-        width: 200,
-        height: 50,
+        padding: 15,
+        width: 180,
         marginTop: 35,
         alignSelf: 'center',
     },
@@ -81,7 +80,7 @@ const styles = StyleSheet.create({
         color: 'rgb(225, 225, 225)',
         fontSize: 18,
         fontWeight: 700,
-    }
+    },
 })
 
 export default Signup
